@@ -1,0 +1,52 @@
+# Crawlspace Media — Video Captions & Educational Summaries
+
+## 3 Signs Your Crawlspace Is Costing You Money
+
+**Caption:** Most homeowners never look under their homes — but your crawlspace could be quietly wasting $100+ per month in energy. Moisture, drooping insulation, and condensation on ducts all make your HVAC work harder. Keep your home dry, efficient, and healthy.
+
+**Hashtags:** #Crawlspace #FranklinTN #MurfreesboroTN #HomeEnergy #MoistureControl #HomeTips
+
+**Educational Summary:** If your floors feel cold or your house smells musty, check the crawlspace. Wet insulation and high humidity force HVAC systems to overwork and can lead to long-term damage. A dry crawlspace saves money and protects your home’s structure.
+
+---
+
+## $5k vs $15k Crawlspace Encapsulation — What’s the Difference?
+
+**Caption:** Why do quotes for crawlspace encapsulation vary so much? The price depends on scope: vapor barrier quality, insulation, dehumidifier, and access. Here's how to spot a fair deal.
+
+**Hashtags:** #Encapsulation #FranklinTN #MurfreesboroTN #NashvilleHomes #HomeImprovement #MoistureControl
+
+**Educational Summary:** A $5,000 job might seal the basics, but a $15,000 job usually includes insulation, sealed joists, and a dehumidifier. The difference isn’t just cost — it’s how long the solution lasts. Knowing what’s included helps you compare quotes wisely.
+
+---
+
+## Why Tennessee Homes Trap Moisture Underneath
+
+**Caption:** Tennessee humidity and outdated vented crawlspaces create a perfect storm. Warm air sneaks in, hits cool surfaces, and condenses. The fix: seal, insulate, and dehumidify.
+
+**Hashtags:** #CrawlspaceFacts #MoistureControl #MiddleTennessee #FranklinTN #HomeMaintenance
+
+**Educational Summary:** In Middle Tennessee’s climate, crawlspace vents invite humid air that condenses under your home. Modern building science recommends sealed crawlspaces with proper insulation and dehumidification to prevent mold and improve efficiency.
+
+---
+
+## Before/After: Local Middle TN Crawlspace
+
+**Caption:** From damp and musty to clean and conditioned — here’s what a professional crawlspace encapsulation looks like. The difference is visible, measurable, and long-lasting.
+
+**Hashtags:** #BeforeAfter #Crawlspace #Dehumidifier #FranklinTN #MurfreesboroTN #HomeUpgrade
+
+**Educational Summary:** Local projects show that a proper encapsulation can cut humidity by 30%+, prevent mold, and improve indoor comfort. Even a one-day transformation can protect your home for decades if done right.
+
+---
+
+## How to Get a Fair Crawlspace Quote
+
+**Caption:** Not all crawlspace quotes are equal. Ask about liner thickness, insulation type, and warranty details. Transparent contractors explain everything — shady ones don’t.
+
+**Hashtags:** #HomeownerTips #CrawlspaceQuote #MiddleTN #FranklinTN #MurfreesboroTN #Renovation
+
+**Educational Summary:** A clear crawlspace quote should list materials, humidity targets, and warranty info. If a contractor can’t explain their process, that’s a red flag. Educated homeowners get better results and fair pricing.
+
+---
+

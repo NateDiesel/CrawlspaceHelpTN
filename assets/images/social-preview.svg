@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <rect width="100%" height="100%" fill="#0e1116"/>
+  <rect x="60" y="60" width="1080" height="510" rx="24" fill="#151a21" stroke="#2a3441"/>
+  <text x="90" y="210" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="64" fill="#e6edf3">Crawlspace Encapsulation</text>
+  <text x="90" y="290" font-family="Segoe UI, Roboto, Arial" font-size="36" fill="#9fb0c0">Middle Tennessee · Free Estimate</text>
+  <text x="90" y="380" font-family="Segoe UI, Roboto, Arial" font-size="28" fill="#9fb0c0">Moisture Control · Air Quality · Energy Savings</text>
+  <rect x="90" y="430" width="360" height="72" rx="12" fill="#3ca9ff"/>
+  <text x="110" y="478" font-family="Segoe UI, Roboto, Arial" font-weight="700" font-size="28" fill="#041018">Get Free Estimate</text>
+</svg>
