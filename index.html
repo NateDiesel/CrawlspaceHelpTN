@@ -3,8 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Page essentials -->
   <title>Crawlspace Help TN — Learn Before You Encapsulate</title>
   <meta name="description" content="Free, unbiased education about crawlspace encapsulation in Middle Tennessee. Compare quotes, understand best practices, and get matched with vetted contractors." />
+  <link rel="canonical" href="https://crawlspacehelptn.xyz/"/>
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png">
@@ -15,11 +18,23 @@
   <meta property="og:title" content="Crawlspace Help TN — Learn Before You Encapsulate">
   <meta property="og:description" content="Free, unbiased education about crawlspace encapsulation in Middle Tennessee.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://natediesel.github.io/CrawlspaceHelpTN/">
-  <meta property="og:image" content="https://natediesel.github.io/CrawlspaceHelpTN/assets/images/og-image.png">
+  <meta property="og:url" content="https://crawlspacehelptn.xyz/">
+  <meta property="og:image" content="https://crawlspacehelptn.xyz/assets/images/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Crawlspace Help TN — Learn Before You Encapsulate">
+  <meta name="twitter:description" content="Free, unbiased education about crawlspace encapsulation in Middle Tennessee.">
+  <meta name="twitter:image" content="https://crawlspacehelptn.xyz/assets/images/og-image.png">
+
+  <!-- (Optional) Google Tag Manager -->
+  <!--
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+  -->
 
   <style>
     :root { --bg:#0b1220; --card:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --accent:#60a5fa; --ok:#34d399; }
@@ -56,15 +71,22 @@
       .grid{grid-template-columns:1fr}
       .kpis{grid-template-columns:1fr 1fr}
     }
+
+    /* Responsive Google Form embed */
+    .section{margin-top:28px}
+    .form-embed { position: relative; width: 100%; padding-top: 150%; }
+    .form-embed iframe { position: absolute; top:0; left:0; width:100%; height:100%; border:0; }
+    @media (min-width: 768px) { .form-embed { padding-top: 120%; } }
+    @media (min-width: 1024px){ .form-embed { padding-top: 100%; } }
   </style>
 
-  <!-- Simple JSON-LD as an info/education site (not a contractor) -->
+  <!-- JSON-LD: Organization (kept) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
     "@type":"Organization",
     "name":"Crawlspace Help TN",
-    "url":"https://natediesel.github.io/CrawlspaceHelpTN/",
+    "url":"https://crawlspacehelptn.xyz/",
     "description":"Unbiased crawlspace encapsulation education for Middle Tennessee homeowners.",
     "sameAs":[
       "https://www.instagram.com/crawlspacehelptn",
@@ -73,9 +95,27 @@
   }
   </script>
 
+  <!-- JSON-LD: Local service presence for education/referrals -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Crawlspace Help TN",
+    "url": "https://crawlspacehelptn.xyz/",
+    "description": "Education-first crawlspace guidance; optional introductions to vetted local pros upon request.",
+    "telephone": "+1-615-555-0199",
+    "areaServed": ["Franklin TN","Nashville TN","Murfreesboro TN","Brentwood TN","Columbia TN"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "TN",
+      "addressCountry": "US"
+    },
+    "serviceType": ["Crawlspace Education","Quote Comparison Guidance","Contractor Introductions"]
+  }
+  </script>
+
   <!-- Plausible Analytics -->
-  <script defer data-domain="natediesel.github.io/CrawlspaceHelpTN" src="https://plausible.io/js/script.js"></script>
-  <!-- TODO: switch data-domain to crawlspacehelptn.com after custom domain -->
+  <script defer data-domain="crawlspacehelptn.xyz" src="https://plausible.io/js/script.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -97,9 +137,9 @@
       <h2>Unbiased crawlspace guidance for Middle Tennessee homeowners</h2>
       <p>Moisture, mold, energy loss—encapsulation can fix real problems, but quotes vary wildly. We explain best practices, common upsells, and realistic pricing so you can choose with confidence.</p>
       <div class="cta">
-        <!-- Now points to embedded form page -->
-        <a class="btn primary" href="./checklist.html">Get a Free 5-Minute Checklist</a>
-        <a class="btn secondary" href="mailto:hello@crawlspacehelptn.com?subject=Question%20about%20encapsulation">Ask a Question</a>
+        <!-- Primary CTA now scrolls to the embedded form -->
+        <a class="btn primary" href="#estimate">Get a Free 5-Minute Checklist</a>
+        <a class="btn secondary" href="mailto:hello@crawlspacehelptn.xyz?subject=Question%20about%20encapsulation">Ask a Question</a>
       </div>
       <div class="kpis">
         <div class="kpi"><strong>10–30%</strong> Typical energy savings after a proper seal</div>
@@ -133,8 +173,8 @@
       <div class="card">
         <h3>Ready to compare quotes?</h3>
         <p>Drop in your details and we’ll send the checklist and a simple worksheet to compare contractor proposals.</p>
-        <a class="btn primary" href="./checklist.html">Get the Checklist</a>
-        <p class="fine" style="margin-top:8px">Prefer email? <a href="mailto:hello@crawlspacehelptn.com">hello@crawlspacehelptn.com</a></p>
+        <a class="btn primary" href="#estimate">Get the Checklist</a>
+        <p class="fine" style="margin-top:8px">Prefer email? <a href="mailto:hello@crawlspacehelptn.xyz">hello@crawlspacehelptn.xyz</a></p>
       </div>
 
       <div class="card">
@@ -143,6 +183,25 @@
           <li><a href="https://www.instagram.com/crawlspacehelptn" target="_blank" rel="noopener">Instagram @crawlspacehelptn</a></li>
           <li><a href="https://www.youtube.com/@CrawlspaceHelpTN" target="_blank" rel="noopener">YouTube @CrawlspaceHelpTN</a></li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Embedded Google Form -->
+    <section id="estimate" class="section">
+      <div class="card">
+        <h3>Get Your Free 5-Minute Checklist</h3>
+        <p class="fine">Add photos for a faster, more tailored checklist and quote comparison tips.</p>
+        <div class="form-embed">
+          <!-- IMPORTANT: replace the src below with your Google Forms EMBED URL:
+               Forms → Send → <> Embed → copy the long https://docs.google.com/forms/d/e/.../viewform?embedded=true -->
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_fin5X2UGixC62rD0Xpa1bgSsrGDMn64ms-WRATy2K4DkOA/viewform?embedded=true" allowfullscreen>Loading…</iframe>
+          <p class="fine" style="margin-top:12px">
+            After submitting, <a href="/assets/Crawlspace-Checklist.pdf" target="_blank">click here to download your free Crawlspace Checklist</a>.
+          </p>
+        </div>
+        <p class="fine" style="margin-top:10px">
+          Having trouble with the form? <a href="https://forms.gle/Sq6Kk7BCRwHBVLfr9" target="_blank" rel="noopener">Open it in a new tab</a>.
+        </p>
       </div>
     </section>
 

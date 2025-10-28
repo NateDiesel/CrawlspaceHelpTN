@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+node_modules/
+package-lock.json
+assets/images/raw/
+assets/images/processed/
+assets/images/short_video_*/
+generated_images/
+reference_photos/
+video/
+.DS_Store
+Thumbs.db
+*.log
+tmp/
