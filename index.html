@@ -91,22 +91,89 @@
   }
   </script>
 
-  <!-- JSON-LD: Local service presence for education/referrals -->
+  <!-- JSON-LD: Richer LocalBusiness presence for education/referrals -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": "Crawlspace Help TN",
     "url": "https://crawlspacehelptn.xyz/",
-    "description": "Education-first crawlspace guidance; optional introductions to vetted local pros upon request.",
+    "description": "Education-first crawlspace guidance; optional introductions to vetted local pros upon request. We are not a contractor.",
     "telephone": "+1-615-555-0199",
-    "areaServed": ["Franklin TN","Nashville TN","Murfreesboro TN","Brentwood TN","Columbia TN"],
+    "image": "https://crawlspacehelptn.xyz/assets/images/og-image.png",
+    "logo": "https://crawlspacehelptn.xyz/assets/images/favicon-192.png",
+    "sameAs":[
+      "https://www.instagram.com/crawlspacehelptn",
+      "https://www.youtube.com/@CrawlspaceHelpTN"
+    ],
+    "areaServed": [
+      {"@type":"AdministrativeArea","name":"Franklin, TN"},
+      {"@type":"AdministrativeArea","name":"Nashville, TN"},
+      {"@type":"AdministrativeArea","name":"Murfreesboro, TN"},
+      {"@type":"AdministrativeArea","name":"Brentwood, TN"},
+      {"@type":"AdministrativeArea","name":"Columbia, TN"}
+    ],
     "address": {
       "@type": "PostalAddress",
       "addressRegion": "TN",
       "addressCountry": "US"
     },
-    "serviceType": ["Crawlspace Education","Quote Comparison Guidance","Contractor Introductions"]
+    "knowsAbout": [
+      "Crawlspace encapsulation",
+      "Vapor barrier",
+      "Dehumidifiers",
+      "Drainage",
+      "Mold prevention",
+      "Quote comparison"
+    ],
+    "serviceType": [
+      "Crawlspace Education",
+      "Quote Comparison Guidance",
+      "Contractor Introductions"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Free resources",
+      "itemListElement": [
+        {"@type":"Offer","name":"Free 5-minute checklist","url":"https://crawlspacehelptn.xyz/estimate"},
+        {"@type":"Offer","name":"Checklist PDF","url":"https://crawlspacehelptn.xyz/assets/Crawlspace-Checklist.pdf"}
+      ]
+    }
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Do I need full crawlspace encapsulation?",
+        "acceptedAnswer": {"@type":"Answer","text":"Not always. In some homes, targeted fixes (improving grading/gutters, sealing vents seasonally, adding a dehumidifier) solve the issue. Encapsulation makes sense when humidity stays high, water intrudes after rains, or mold/wood damage is present."}
+      },
+      {
+        "@type": "Question",
+        "name": "What does a typical encapsulation include?",
+        "acceptedAnswer": {"@type":"Answer","text":"Continuous vapor barrier (taped and sealed), wall and rim-joist insulation for sealed crawls, drainage and sump if needed, and controlled humidity (dehumidifier or HVAC supply per code)."}
+      },
+      {
+        "@type": "Question",
+        "name": "How much does it cost in Middle Tennessee?",
+        "acceptedAnswer": {"@type":"Answer","text":"We commonly see $6–$15k for full encapsulation, varying with square footage, barrier thickness, drainage, dehumidifier, and access needs."}
+      },
+      {
+        "@type": "Question",
+        "name": "Are you a contractor?",
+        "acceptedAnswer": {"@type":"Answer","text":"No. We’re educators. If you ask, we can introduce you to vetted local pros and may receive a referral fee. You stay in control."}
+      },
+      {
+        "@type": "Question",
+        "name": "How do I get the free checklist?",
+        "acceptedAnswer": {"@type":"Answer","text":"Go to https://crawlspacehelptn.xyz/estimate to request it or download the PDF directly from the homepage."}
+      }
+    ]
   }
   </script>
 
@@ -194,10 +261,37 @@
       </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="section">
+      <div class="card">
+        <h3>Frequently Asked Questions</h3>
+        <details>
+          <summary>Do I need full crawlspace encapsulation?</summary>
+          <p>Not always. Sometimes simple fixes — better grading/gutters, sealing vents seasonally, or adding a dehumidifier — are enough. Encapsulation makes sense when humidity stays high, water enters after rains, or you see mold/wood damage.</p>
+        </details>
+        <details>
+          <summary>What’s included in a proper encapsulation?</summary>
+          <p>Continuous vapor barrier (taped and sealed), sealed walls/rim-joist (for sealed crawls), drainage and a sump where needed, and controlled humidity (dehumidifier or HVAC supply per code).</p>
+        </details>
+        <details>
+          <summary>How much does it cost in Middle Tennessee?</summary>
+          <p>Typical full encapsulations run about $6–$15k depending on square footage, barrier thickness, drainage, dehumidifier, and access.</p>
+        </details>
+        <details>
+          <summary>Are you a contractor?</summary>
+          <p>No — we’re educators. If you ask, we can introduce you to vetted local pros and may receive a referral fee. You stay in control.</p>
+        </details>
+        <details>
+          <summary>How do I get the free checklist?</summary>
+          <p><a href="/estimate">Request it here</a>, or grab the PDF from the homepage download block.</p>
+        </details>
+      </div>
+    </section>
+
     <!-- (Form embed moved to /estimate) -->
 
     <footer>
-      © <span id="y"></span> Crawlspace Help TN — Education first. Middle Tennessee focus.
+      © <span id="y"></span> Crawlspace Help TN — Education first. Middle Tennessee focus. · <a href="/privacy.html">Privacy</a>
     </footer>
   </div>
 
