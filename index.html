@@ -48,7 +48,7 @@
     header{display:flex;align-items:center;gap:14px;margin:10px 0 24px}
     .logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#1f2937,#111827);border:1px solid #1f2937}
   .logo svg{width:28px;height:28px}
-  .logo img{width:28px;height:28px;display:block}
+  .logo img{width:28px;height:28px;display:block;object-fit:contain}
     .brand h1{margin:0;font-size:1.25rem}
     .brand p{margin:0;color:var(--muted);font-size:.95rem}
 
@@ -187,7 +187,7 @@
   <div class="wrap">
     <header>
       <div class="logo" aria-hidden="true">
-        <img src="/assets/images/tn-flag.svg" alt="Tennessee emblem" />
+        <img id="logo-img" src="/assets/images/tn-flag.svg" alt="Tennessee emblem" />
       </div>
       <div class="brand">
         <h1>Crawlspace Help TN</h1>
@@ -294,5 +294,22 @@
   </div>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+  // Optional preview toggle: use full Tennessee flag in header when ?logo=flag or ?flag=1
+  (function(){
+    try{
+      var params = new URLSearchParams(window.location.search);
+      var useFlag = params.get('logo') === 'flag' || params.get('flag') === '1';
+      if(!useFlag) return;
+      var img = document.getElementById('logo-img');
+      if(!img) return;
+      img.src = '/assets/images/tennessee-flag.svg';
+      img.alt = 'Tennessee flag';
+      // Better aspect for 5:3 flag inside the 44x44 badge
+      img.style.width = '36px';
+      img.style.height = '22px';
+    }catch(e){}
+  })();
+  </script>
 </body>
 </html>
