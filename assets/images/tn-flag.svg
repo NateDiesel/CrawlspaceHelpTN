@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" aria-labelledby="title desc" role="img">
+  <title id="title">Tennessee Tri-Star Emblem (Simplified)</title>
+  <desc id="desc">A simplified blue circle with white border and three white diamond shapes arranged like the Tennessee tri-star.</desc>
+  <!-- Background transparent; emblem fits any container -->
+  <!-- Blue circle with white border -->
+  <circle cx="50" cy="50" r="40" fill="#1e40af" stroke="#ffffff" stroke-width="6" />
+  <!-- Three white diamonds (rotated squares) -->
+  <g fill="#ffffff" transform="translate(50,50)">
+    <!-- top diamond -->
+    <rect x="-6" y="-24" width="12" height="12" transform="rotate(45)" />
+    <!-- bottom-left diamond -->
+    <rect x="-26" y="8" width="12" height="12" transform="rotate(45)" />
+    <!-- bottom-right diamond -->
+    <rect x="14" y="8" width="12" height="12" transform="rotate(45)" />
+  </g>
+</svg>
