@@ -182,6 +182,11 @@
 
   <!-- Plausible Analytics -->
   <script defer data-domain="crawlspacehelptn.xyz" src="https://plausible.io/js/script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(()=>{});
+  }
+  </script>
 </head>
 <body>
   <div class="wrap">
@@ -200,7 +205,7 @@
       <p>Moisture, mold, energy loss—encapsulation can fix real problems, but quotes vary wildly. We explain best practices, common upsells, and realistic pricing so you can choose with confidence.</p>
       <div class="cta">
         <!-- Primary CTA now links to dedicated estimate page -->
-        <a class="btn primary" href="/estimate">Get a Free 5-Minute Checklist</a>
+  <a class="btn primary" href="/estimate" data-analytics="cta-estimate">Get a Free 5-Minute Checklist</a>
         <a class="btn secondary" href="mailto:hello@crawlspacehelptn.xyz?subject=Question%20about%20encapsulation">Ask a Question</a>
       </div>
       <div class="kpis">
@@ -216,7 +221,7 @@
       <div class="card">
         <h3>Free Crawlspace Checklist (PDF)</h3>
         <div class="cta" style="margin-top:8px">
-          <a class="btn primary" href="/assets/Crawlspace-Checklist.pdf" target="_blank" rel="noopener" download>Download PDF</a>
+          <a class="btn primary" href="/assets/Crawlspace-Checklist.pdf" target="_blank" rel="noopener" data-analytics="dl-checklist" download>Download PDF</a>
           <a class="btn secondary" href="/checklist">Preview Online</a>
         </div>
       </div>
@@ -246,7 +251,7 @@
       <div class="card">
         <h3>Ready to compare quotes?</h3>
         <p>Drop in your details and we’ll send the checklist and a simple worksheet to compare contractor proposals.</p>
-        <a class="btn primary" href="/estimate">Get the Checklist</a>
+  <a class="btn primary" href="/estimate" data-analytics="cta-estimate">Get the Checklist</a>
         <p class="fine" style="margin-top:8px">Prefer email? <a href="mailto:hello@crawlspacehelptn.xyz">hello@crawlspacehelptn.xyz</a></p>
       </div>
 
@@ -310,6 +315,12 @@
       img.style.height = '22px';
     }catch(e){}
   })();
+  </script>
+  <script>
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[data-analytics]');
+    if (a && window.plausible) plausible(a.dataset.analytics);
+  });
   </script>
 </body>
 </html>

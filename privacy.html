@@ -24,6 +24,11 @@
     p{color:var(--muted)}
   </style>
   <script defer data-domain="crawlspacehelptn.xyz" src="https://plausible.io/js/script.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(()=>{});
+  }
+  </script>
 </head>
 <body>
   <div class="wrap">
