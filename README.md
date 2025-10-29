@@ -29,3 +29,23 @@ These are placeholders only — nothing posts automatically until you connect th
 3. Console: `typeof window.plausible` → should be `"function"`.
 4. Click CTA on home → look for `plausible.io/api/event?name=cta-estimate`.
 5. Visit checklist.html → look for `plausible.io/api/event?name=dl-checklist`.
+
+## Plausible Tracking
+
+**Events (custom):**
+- `cta-estimate` — homepage CTA click (#cta-estimate)
+- `dl-checklist` — fired automatically on `checklist.html` via `<body data-plausible-event="dl-checklist">`
+- `cta-question` — add `data-plausible-click="cta-question"` to “Ask a Question” CTA(s)
+- `click-phone` — auto for `tel:` links; props: `{ number }`
+- `click-email` — auto for `mailto:` links; props: `{ address }`
+- `outbound-link` — auto for off-site `<a>` clicks; props: `{ host, url }`
+- `scroll-depth` — auto at 25/50/75/100; props: `{ percent }`
+- `video-play`, `video-complete` — for `<video data-track-video>`; props: `{ id, src }`
+
+**Plausible UI (mark as Goals):**
+1. Open Plausible → your site → Goals
+2. Add goals for these events: `cta-estimate`, `dl-checklist`, `cta-question`
+3. Optional Funnel suggestion: CTA → Estimate → Checklist
+	- Step 1: `cta-estimate`
+	- Step 2: (optional future) `estimate-submit` if you emit it later
+	- Step 3: `dl-checklist`
