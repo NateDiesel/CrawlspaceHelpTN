@@ -205,7 +205,7 @@
       <p>Moisture, mold, energy loss—encapsulation can fix real problems, but quotes vary wildly. We explain best practices, common upsells, and realistic pricing so you can choose with confidence.</p>
       <div class="cta">
         <!-- Primary CTA now links to dedicated estimate page -->
-  <a class="btn primary" href="/estimate" data-analytics="cta-estimate">Get a Free 5-Minute Checklist</a>
+  <a id="cta-estimate" class="btn primary" href="/estimate" data-analytics="cta-estimate">Get a Free 5-Minute Checklist</a>
         <a class="btn secondary" href="mailto:hello@crawlspacehelptn.xyz?subject=Question%20about%20encapsulation">Ask a Question</a>
       </div>
       <div class="kpis">
@@ -316,11 +316,6 @@
     }catch(e){}
   })();
   </script>
-  <script>
-  document.addEventListener('click', e => {
-    const a = e.target.closest('a[data-analytics]');
-    if (a && window.plausible) plausible(a.dataset.analytics);
-  });
-  </script>
+  <script defer src="/assets/js/plausible-events.js"></script>
 </body>
 </html>
