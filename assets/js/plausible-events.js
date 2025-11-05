@@ -34,13 +34,8 @@
     on(el, 'click', () => fire('cta-estimate'));
   }
 
-  // ---- Phone / Email -------------------------------------------------------
+  // ---- Email only ----------------------------------------------------------
   function bindContactLinks() {
-    document.querySelectorAll('a[href^="tel:"]').forEach(a => {
-      if (a.__plb) return; a.__plb = true;
-      const number = a.getAttribute('href').replace(/^tel:/i, '');
-      on(a, 'click', () => fire('click-phone', { number }));
-    });
     document.querySelectorAll('a[href^="mailto:"]').forEach(a => {
       if (a.__plb) return; a.__plb = true;
       const address = a.getAttribute('href').replace(/^mailto:/i, '');
