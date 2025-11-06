@@ -1,0 +1,14 @@
+# Lychee link checker configuration
+
+# Skip non-web links and analytics domains prone to rate limits
+exclude = [
+  "mailto:*",
+  "tel:*",
+  "plausible.io",
+  "api.plausible.io"
+]
+
+# Reduce noise/timeouts (defaults are fine otherwise)
+max_redirects = 5
+retry_wait_time = 2
+timeout = 20

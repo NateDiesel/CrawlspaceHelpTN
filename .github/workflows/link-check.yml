@@ -1,0 +1,32 @@
+name: Link and Pages Checks
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  link-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run lychee link checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --no-progress --max-redirects 5 --timeout 20 --retry-wait-time 2 --config lychee.toml .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  head-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check homepage
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://crawlspacehelptn.xyz/)
+          if [ "$code" != "200" ]; then echo "Homepage returned $code"; exit 1; fi
+      - name: Check checklist PDF
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" https://crawlspacehelptn.xyz/checklist/crawlspace-checklist.pdf)
+          if [ "$code" != "200" ]; then echo "Checklist PDF returned $code"; exit 1; fi
