@@ -12,3 +12,14 @@ video/
 Thumbs.db
 *.log
 tmp/
+\# Heavy media (keep repo lean)
+assets/images/**/ref_images/
+assets/images/processed/crawl-space-vapor-barrier-installation/
+*.psd
+*.tif
+*.tiff
+*.heic
+*.mov
+*.mp4
+
+# Heavy media (keep repo lean)
