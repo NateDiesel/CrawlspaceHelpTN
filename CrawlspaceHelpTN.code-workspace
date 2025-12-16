@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../_staging/AutomationPipelines/videogen"
+		}
+	],
+	"settings": {}
+}

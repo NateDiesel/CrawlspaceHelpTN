@@ -182,6 +182,7 @@
 
   <!-- Plausible Analytics -->
   <script defer data-domain="crawlspacehelptn.xyz" src="https://plausible.io/js/script.js"></script>
+  <script src="/assets/js/site-constants.js"></script>
   <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(()=>{});
@@ -198,7 +199,8 @@
         <h1>Crawlspace Help TN</h1>
         <p>Middle Tennessee crawlspace help from vetted local pros. Education first, not sales.</p>
       </div>
-      <div style="margin-left:auto">
+      <div style="margin-left:auto;display:flex;gap:10px;align-items:center">
+        <a class="btn secondary header-call" href="tel:+16155551234" data-plausible-click="header-call">Call Now (615) 555-1234</a>
         <a class="btn secondary header-email"
            href="mailto:hello@crawlspacehelptn.xyz?subject=Free%20Crawlspace%20Help"
            data-plausible-click="header-email-click">
@@ -223,6 +225,7 @@
            data-plausible-click="cta-question">
           Ask a Question
         </a>
+        <a class="btn secondary" href="tel:+16155551234" data-plausible-click="cta-call">Call Now (615) 555-1234</a>
       </div>
       <div class="kpis">
         <div class="kpi"><strong>10–30%</strong> Typical energy savings after a proper seal</div>
@@ -234,6 +237,20 @@
         <br>
         *Ranges vary by square footage, vapor barrier thickness, drainage, dehumidifier, and access needs.
       </p>
+    </section>
+
+    <!-- Common Crawlspace Problems (quick links) -->
+    <section class="section">
+      <div class="card">
+        <h3>Common Crawlspace Problems</h3>
+        <p class="fine">If you notice any of these, start with one of our short guides.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:10px">
+          <a class="btn" href="/musty-smell/">Musty Smell</a>
+          <a class="btn" href="/cold-floors/">Cold Floors</a>
+          <a class="btn" href="/mold/">Mold In Crawlspace</a>
+          <a class="btn" href="/standing-water/">Standing Water</a>
+        </div>
+      </div>
     </section>
 
     <!-- Checklist quick download/preview block (keep as lead magnet) -->

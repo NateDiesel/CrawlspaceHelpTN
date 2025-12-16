@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Get Your Free Crawlspace Checklist — Crawlspace Help TN</title>
-  <meta name="description" content="Request the free 5-minute crawlspace checklist and quote comparison tips. We’re educators, not contractors." />
+  <title>Get Crawlspace Help — Free Checklist & Local Pro Match | Crawlspace Help TN</title>
+  <meta name="description" content="Tell us about your crawlspace in Middle Tennessee and get the free 5-minute checklist, plus optional intros to vetted local pros. We’re educators, not contractors." />
   <link rel="canonical" href="https://crawlspacehelptn.xyz/estimate" />
 
   <!-- Favicons -->
@@ -15,8 +15,8 @@
   <meta name="theme-color" content="#0b1220">
 
   <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Get Your Free Crawlspace Checklist — Crawlspace Help TN">
-  <meta property="og:description" content="Request the free 5-minute crawlspace checklist and quote comparison tips.">
+  <meta property="og:title" content="Get Crawlspace Help — Free Checklist & Local Pro Match | Crawlspace Help TN">
+  <meta property="og:description" content="Share a few details about your crawlspace and get the free checklist, quote comparison tips, and optional introductions to vetted Middle Tennessee pros.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://crawlspacehelptn.xyz/estimate">
   <meta property="og:image" content="https://crawlspacehelptn.xyz/assets/images/og-image.png">
@@ -47,6 +47,7 @@
 
   <!-- Plausible Analytics -->
   <script defer data-domain="crawlspacehelptn.xyz" src="https://plausible.io/js/script.js"></script>
+  <script src="/assets/js/site-constants.js"></script>
   <script>
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js').catch(()=>{});
@@ -59,19 +60,57 @@
       <a class="back" href="index.html">← Back to homepage</a>
     </header>
 
-    <h1>Free 5-Minute Crawlspace Checklist</h1>
-    <p>Fill this out and we’ll email your checklist + photo guide. Add photos for faster, more tailored tips.</p>
+    <div id="call-now-top" style="margin-top:6px"></div>
+
+    <h1>Tell Us About Your Crawlspace (About 2 Minutes)</h1>
+    <p>
+      Fill out this short form to get the free crawlspace checklist and photo guide, plus optional tailored tips and
+      introductions to vetted local pros in Middle Tennessee. Share photos or existing quotes if you have them — it helps us
+      point you toward the right scope of work before you spend thousands.
+    </p>
 
     <div class="card">
       <div class="form-embed">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_fin5X2UGixC62rD0Xpa1bgSsrGDMn64ms-WRATy2K4DkOA/viewform?embedded=true" allowfullscreen loading="lazy">Loading…</iframe>
+        <iframe id="estimate-form-iframe"
+          src="PASTE_FULL_GOOGLE_FORM_EMBED_URL_HERE"
+          allowfullscreen
+          loading="lazy">
+          Loading…
+        </iframe>
       </div>
       <div class="cta">
-  <a class="btn primary" href="/checklist/crawlspace-checklist.pdf" target="_blank" rel="noopener" download>Download the PDF</a>
-  <a class="btn" href="checklist.html">Preview online</a>
+        <a class="btn primary"
+           href="/checklist/crawlspace-checklist.pdf"
+           target="_blank"
+           rel="noopener"
+           download>
+          Download the PDF
+        </a>
+        <a class="btn" href="checklist.html">Preview online</a>
       </div>
+      <p class="fine" style="margin-top:10px">Prefer to call? Tap the number above.</p>
+      <p class="fine" id="estimate-form-fallback" style="margin-top:8px"></p>
     </div>
   </div>
+  <script>
+    // Set call now button and form iframe src/fallback using shared constants
+    try{
+      var callNowTop = document.getElementById('call-now-top');
+      if(callNowTop && typeof callNowHtml === 'function') callNowTop.innerHTML = callNowHtml();
+
+      var iframe = document.getElementById('estimate-form-iframe');
+      if(iframe){
+        iframe.src = (typeof GOOGLE_FORM_EMBED_URL !== 'undefined') ? GOOGLE_FORM_EMBED_URL : iframe.src;
+      }
+
+      // Fallback link beneath iframe (open form in new tab without embedded param)
+      var fallback = document.getElementById('estimate-form-fallback');
+      if(fallback && typeof GOOGLE_FORM_EMBED_URL !== 'undefined'){
+        var href = GOOGLE_FORM_EMBED_URL.replace('?embedded=true','');
+        fallback.innerHTML = '<a href="'+href+'" target="_blank" rel="noopener">Open the form in a new tab</a>';
+      }
+    }catch(e){console.warn(e)}
+  </script>
   <script defer src="assets/js/plausible-events.js"></script>
 </body>
 </html>
