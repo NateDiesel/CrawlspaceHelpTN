@@ -1,6 +1,6 @@
-// Shared site constants (placeholders — update as needed)
-const PHONE_DISPLAY = "(615) 555-1234";
-const PHONE_TEL = "+16155551234";
+// Shared site constants (placeholders — please replace with live values)
+const PHONE_DISPLAY = "REPLACE_WITH_REAL_DISPLAY_NUMBER";
+const PHONE_TEL = "REPLACE_WITH_REAL_E164_NUMBER"; // e.g. +16155551234
 // Replace this with the full Google Form embed URL (including ?embedded=true)
 const GOOGLE_FORM_EMBED_URL = "PASTE_FULL_GOOGLE_FORM_EMBED_URL_HERE";
 
