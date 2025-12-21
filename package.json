@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NateDiesel/CrawlspaceHelpTN.git"
+    "url": "git+https://github.com/bentley-michael/CrawlspaceHelpTN.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NateDiesel/CrawlspaceHelpTN/issues"
+    "url": "https://github.com/bentley-michael/CrawlspaceHelpTN/issues"
   },
-  "homepage": "https://github.com/NateDiesel/CrawlspaceHelpTN#readme",
+  "homepage": "https://github.com/bentley-michael/CrawlspaceHelpTN#readme",
   "devDependencies": {
     "playwright": "^1.56.1"
   },
